@@ -3,7 +3,7 @@ pipeline {
 
     stages {
         stage('Build Docker Image') {
-            description: 'Builds the Docker image using the Dockerfile'
+            
             steps {
                 script {
                     // Build Docker image using Dockerfile
@@ -13,7 +13,7 @@ pipeline {
         }
 
         stage('Run Docker Container') {
-            description: 'Runs a Docker container based on the built image'
+            
             steps {
                 script {
                     // Run Docker container based on the built image
@@ -23,7 +23,7 @@ pipeline {
         }
 
         stage('Test') {
-            description: 'Runs tests for the application'
+            
             steps {
                 // Add test steps here if applicable
             }
