@@ -3,7 +3,6 @@ pipeline {
 
     stages {
         stage('Build Docker Image') {
-            
             steps {
                 script {
                     // Build Docker image using Dockerfile
@@ -13,7 +12,6 @@ pipeline {
         }
 
         stage('Run Docker Container') {
-            
             steps {
                 script {
                     // Run Docker container based on the built image
@@ -23,11 +21,9 @@ pipeline {
         }
 
         stage('Test') {
-            
             steps {
-                // Add test steps here if applicable
+                echo 'No tests are currently implemented'
             }
         }
     }
 }
-
